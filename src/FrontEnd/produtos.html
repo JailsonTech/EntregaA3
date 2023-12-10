@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRODUTOS</title>
+  <script src="front.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="section1 container">
+   <div class="div1 divForm">
+      <h2 class="title h2-inserir">INSERIR PRODUTO</h2>
+      <form>
+        <label for="nome">Produto</label><br>
+        <input type="text" id="nome" placeholder="Insira um produto...ex:feijão">
+      </form><br>         
+      <button class="botao1 botoes" onclick="inserirProduto()">Inserir</button>
+   </div>
+   <div  class="divInserir conteudo-div" ><p id="insereProduto" class="textoInserido"></p></div>
+ </section>
+  
+ <section class="section2 container">
+  <div class="div2 divForm">
+     <h2 class="title h2-ver">VER PRODUTOS</h2>    
+     <button class="botao2 botoes" onclick="mostrarProduto()">Mostrar</button>
+  </div>
+  <div class="divInserir conteudo-div"><p id="verProduto" class="textoInserido"></p></div>
+</section>
+
+<section class="section3 container">
+  <div class="div3 divForm">
+     <h2 class="title h2-excluir">EXCLUIR PRODUTOS</h2>  
+     <form>
+      <label for="nome">ID</label><br>
+      <input type="text" id="nome" placeholder="Insira o ID do produto (1, 2, 3...)">
+    </form><br>    
+     <button class="botao3 botoes" onclick="excluirProduto()">Excluir</button>
+  </div>
+  <div class="divInserir conteudo-div"><p id="excluirProduto" class="textoInserido"></p></div>  
+</section>
+
+<section class="section4 container">
+  <div class="div4 divForm">
+      <h2 class="title h2-mudar">MUDAR PRODUTOS</h2>   
+      <form>
+        <label for="id">ID</label><br>
+        <input type="text" id="id" placeholder="Insira o Id do produto que será mudado">
+        <label for="nome">Nome</label><br>
+        <input type="text" id="nome" placeholder="Insira um novo produto">
+      </form><br> 
+     <button class="botao4 botoes" onclick="trocarProduto()">Trocar</button>
+  </div>
+  <div class="divInserir conteudo-div"><p id="mudarProduto" class="textoInserido"></p></div>
+</section>
+
+</body>
+</html>
